@@ -91,7 +91,7 @@ const observer = new IntersectionObserver((entries) => {
             entry.target.classList.add("show");
         }
     });
-}, { threshold: 0.1 });
+}, { threshold: 0, rootMargin: "0px 0px -30px 0px" });
 
 document.querySelectorAll(".card").forEach(card => {
     observer.observe(card);
