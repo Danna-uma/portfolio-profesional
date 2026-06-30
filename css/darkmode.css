@@ -1,0 +1,36 @@
+body.dark{
+    background:#1f2937;
+    color:#f8fafc;
+}
+
+body.dark header{
+    background:rgba(15,23,42,.85);
+}
+
+body.dark .navbar a,
+body.dark .nav-links a{
+    color:#f8fafc;
+}
+
+body.dark .hero{
+    background:linear-gradient(135deg,#1f2937,#111827);
+}
+
+body.dark .card,
+body.dark .project-card,
+body.dark .timeline-item,
+body.dark .contact-form{
+    background:#1e293b;
+    color:white;
+}
+
+body.dark .section h2{
+    color:#60a5fa;
+}
+
+body.dark input,
+body.dark textarea{
+    background:#374151;
+    color:white;
+    border:1px solid #4b5563;
+}
