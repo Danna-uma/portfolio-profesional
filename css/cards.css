@@ -7,10 +7,15 @@
     background:var(--white);
     border-radius:var(--radius);
     box-shadow:var(--shadow);
+    border:1px solid #e2e8f0;
+    padding:1rem;
+    opacity:1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card:hover{
-    transform:translateY(-10px);
+.card:hover,
+.card:active {
+    transform: translateY(-6px);
     box-shadow:0 20px 40px rgba(37,99,235,.15);
 }
 
@@ -26,10 +31,10 @@
     border-radius:20px;
     overflow:hidden;
     box-shadow:0 10px 25px rgba(0,0,0,.08);
+    border:1px solid #e2e8f0;
     transition:.3s;
 }
 
-.card:hover,
 .project-card:hover{
     transform:translateY(-10px);
 }
@@ -42,4 +47,5 @@
 
 .project-card p{
     line-height:1.8;
+    color:var(--text);
 }

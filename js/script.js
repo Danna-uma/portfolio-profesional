@@ -83,16 +83,3 @@ decreaseBtn.addEventListener("click", () => {
         localStorage.setItem("fontSize", fontSize);
     }
 });
-
-/* ANIMACIÓN DE ENTRADA PARA CARDS */
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if(entry.isIntersecting){
-            entry.target.classList.add("show");
-        }
-    });
-}, { threshold: 0, rootMargin: "0px 0px -30px 0px" });
-
-document.querySelectorAll(".card").forEach(card => {
-    observer.observe(card);
-});
